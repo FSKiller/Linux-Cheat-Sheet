@@ -13,8 +13,8 @@ To enable DX12 compatibilty permanently run:
 
 Go to a new directory and the follow the commands below:
 >git clone https://github.com/NVIDIA/nvidia-persistenced.git
-cd nvidia-persistenced/init
-./install.sh
+>cd nvidia-persistenced/init
+>./install.sh
 
 Verify that the service is running using:
 >systemctl status nvidia-persistenced
