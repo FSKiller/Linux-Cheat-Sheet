@@ -7,14 +7,19 @@ To enable DX12 compatibilty permanently run:
 - nano /etc/modules-load.d/modules.conf // Add nvidia e nvidia_uvm to this file (One per line).
 - nano /etc/udev/rules.d/70-nvidia.rules // Inside this file add: 
 	> #Create /nvidia0, /dev/nvidia1 … and /nvidiactl when nvidia module is loaded
+	
 	> KERNEL=="nvidia", RUN+="/bin/bash -c '/usr/bin/nvidia-smi -L'"
+	
 	> #Create the CUDA node when nvidia_uvm CUDA module is loaded
+	
 	> KERNEL=="nvidia_uvm", RUN+="/bin/bash -c '/usr/bin/nvidia-modprobe -c0 -u'"
 
 Go to a new directory and the follow the commands below:
->git clone https://github.com/NVIDIA/nvidia-persistenced.git
->cd nvidia-persistenced/init
->./install.sh
+> git clone https://github.com/NVIDIA/nvidia-persistenced.git
+
+> cd nvidia-persistenced/init
+
+> ./install.sh
 
 Verify that the service is running using:
 >systemctl status nvidia-persistenced
