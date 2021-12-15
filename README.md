@@ -33,10 +33,14 @@ Disable all swap's
 
 Now here's the thing, we can increase the size of the default *swapfile* located in **/swap/swapfile** or we can create a new swap file in another drive.
 To do this go the place where you want the swap file and run the commands below:
->sudo dd if=/dev/zero of=swapfile bs=1G count=8 //Where **count** = the size we want in GB 
-sudo chmod 600 swapfile
-sudo mkswap swapfile
-sudo swapon swapfile
+>sudo dd if=/dev/zero of=swapfile bs=1G count=8 
+
+Where **count** = the size we want in GB 
+>sudo chmod 600 swapfile
+
+>sudo mkswap swapfile
+
+>sudo swapon swapfile
 
 Verify the swap was created with htop or other program.
 
