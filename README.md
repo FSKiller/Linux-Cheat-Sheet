@@ -1,4 +1,7 @@
 # Linux Journey Cheat Sheet
+## LOAD EMP.dll
+"to load emp.dll you don't need patches, you just need to compile wine-tkg without mingw"
+
 ## FIX NVIDIA DX12 GAMES (In Lutris)
 To enable DX12 compatibilty in linux with NVIDIA GPU's run:
 - sudo nvidia-modprobe -u -c=0 (This setting resets after after reboot.)
