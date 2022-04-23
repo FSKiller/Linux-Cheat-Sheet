@@ -1,7 +1,4 @@
 # Linux Journey Cheat Sheet
-## LOAD EMP.dll
-"to load emp.dll you don't need patches, you just need to compile wine-tkg without mingw"
-
 ## FIX NVIDIA DX12 GAMES (In Lutris)
 To enable DX12 compatibilty in linux with NVIDIA GPU's run:
 - sudo nvidia-modprobe -u -c=0 (This setting resets after after reboot.)
@@ -67,8 +64,11 @@ With these flags:
 Git Clone from tkg's repo (Arch and derivs Only):
 > https://github.com/Frogging-Family/linux-tkg
 > Edit "customization.cfg" for specific patches
->makepkg -si
+> makepkg -si
 
 # Getting "Immortal's Fenyx Rising" running
-Download this wine Version with custom patches:
->https://github.com/buggerhunter/wine-4g
+Download a Non MinGW wine Version.
+
+# Running WineTricks manually:
+export WINEPREFIX=/home/thunderfox/Games/Elden\ Ring/Prefix/
+env WINE=/home/thunderfox/.local/share/lutris/runners/wine/lutris-ge-7.9-2-x86_64/bin/wine64 winetricks
