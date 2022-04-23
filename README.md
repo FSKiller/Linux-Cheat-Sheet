@@ -66,7 +66,7 @@ Git Clone from tkg's repo (Arch and derivs Only):
 > Edit "customization.cfg" for specific patches
 > makepkg -si
 
-# Getting "Immortal's Fenyx Rising" running
+# Getting "EMP.dll Games" running
 Download a Non MinGW wine Version.
 
 # Running WineTricks manually:
