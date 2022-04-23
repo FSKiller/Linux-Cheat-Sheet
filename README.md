@@ -70,5 +70,6 @@ Git Clone from tkg's repo (Arch and derivs Only):
 Download a Non MinGW wine Version.
 
 # Running WineTricks manually:
-export WINEPREFIX=/home/thunderfox/Games/Elden\ Ring/Prefix/
-env WINE=/home/thunderfox/.local/share/lutris/runners/wine/lutris-ge-7.9-2-x86_64/bin/wine64 winetricks
+> export WINEPREFIX=/home/thunderfox/Games/Elden\ Ring/Prefix/
+
+> env WINE=/home/thunderfox/.local/share/lutris/runners/wine/lutris-ge-7.9-2-x86_64/bin/wine64 winetricks
