@@ -70,6 +70,9 @@ Git Clone from tkg's repo (Arch and derivs Only):
 Download a Non MinGW wine Version.
 
 # Running WineTricks manually:
-> export WINEPREFIX=/home/thunderfox/Games/Elden\ Ring/Prefix/
+> export WINEPREFIX=/home/$User/Games/$Game/Prefix/
 
-> env WINE=/home/thunderfox/.local/share/lutris/runners/wine/lutris-ge-7.9-2-x86_64/bin/wine64 winetricks
+> env WINE=/home/$User/.local/share/lutris/runners/wine/lutris-ge-7.9-2-x86_64/bin/wine64 winetricks
+
+# Using Online Fix with Steam
+> WINEDLLOVERRIDES="OnlineFix64=n;winmm=n,b;elden_ring_seamless_coop=n;steam_api64=n" OBS_VKCAPTURE=1 mangohud %command%
