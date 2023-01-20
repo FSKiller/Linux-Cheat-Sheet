@@ -76,3 +76,6 @@ Download a Non MinGW wine Version.
 
 # Using Online Fix with Steam
 > WINEDLLOVERRIDES="OnlineFix64=n;winmm=n,b;elden_ring_seamless_coop=n;steam_api64=n" OBS_VKCAPTURE=1 mangohud %command%
+
+# Compiling Dxvk and VKD3D(for reference)
+> ./package-release.sh master ./Builds/ --no-package
