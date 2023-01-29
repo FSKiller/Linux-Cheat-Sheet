@@ -79,3 +79,18 @@ Download a Non MinGW wine Version.
 
 # Compiling Dxvk and VKD3D(for reference)
 > ./package-release.sh master ./Builds/ --no-package
+
+# Fixing possible network errors in Ubisoft Connect
+You can enable it temporarily with `sudo sysctl -w net.ipv4.tcp_mtu_probing=1`
+
+And to make it permanent, run `echo "net.ipv4.tcp_mtu_probing=1" | sudo tee /etc/sysctl.d/90-custom-mtu-probing.conf`
+
+> tcp_mtu_probing 
+>
+> Controls TCP Packetization-Layer Path MTU Discovery. Takes three values:
+>
+> 0 - Disabled
+>
+> 1 - Disabled by default, enabled when an ICMP black hole detected
+>
+> 2 - Always enabled, use initial MSS of tcp_base_mss.
