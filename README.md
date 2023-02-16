@@ -77,6 +77,8 @@ Download a Non MinGW wine Version.
 # Using Online Fix with Steam
 > WINEDLLOVERRIDES="OnlineFix64=n;winmm=n,b;elden_ring_seamless_coop=n;steam_api64=n" OBS_VKCAPTURE=1 mangohud %command%
 
+>WINEDLLOVERRIDES="steam_api64_o=n;steam_api64=n" __GL_SHADER_DISK_CACHE_SKIP_CLEANUP=1 __GL_THREADED_OPTIMIZATIONS=1 PROTON_ENABLE_NGX_UPDATER=1 DXVK_NVAPI_DRIVER_VERSION=52849 PROTON_ENABLE_NVAPI=1 VKD3D_CONFIG=dxr11 VKD3D_FEATURE_LEVEL=12_1 OBS_VKCAPTURE=1 mangohud protonhax init %command%
+
 # Compiling Dxvk and VKD3D(for reference)
 > ./package-release.sh master ./Builds/ --no-package
 
