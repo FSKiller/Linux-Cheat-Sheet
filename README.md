@@ -96,3 +96,8 @@ And to make it permanent, run `echo "net.ipv4.tcp_mtu_probing=1" | sudo tee /etc
 > 1 - Disabled by default, enabled when an ICMP black hole detected
 >
 > 2 - Always enabled, use initial MSS of tcp_base_mss.
+
+# Using Dracut and EOS with Nvidia Part 1
+Install this:
+> https://github.com/endeavouros-team/PKGBUILDS/tree/master/nvidia-hook
+Then create a nvidia hook for pacman.
